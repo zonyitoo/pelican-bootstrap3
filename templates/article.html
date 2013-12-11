@@ -4,6 +4,7 @@
     <section id="content">
         <article>
             <header class="page-header">
+                <h3><i class="icon-calendar"></i> {{ article.locale_date }}</h3>
                 <h1>
                     <a href="{{ SITEURL }}/{{ article.url }}"
                        rel="bookmark"
@@ -11,13 +12,15 @@
                         {{ article.title }}
                     </a>
                 </h1>
+                <small>{% include 'includes/taglist.html' %}</small>
             </header>
             <div class="entry-content">
-                <div class="panel">
+                {#<div class="panel">
                     <div class="panel-body">
                         {% include "includes/article_info.html" %}
                     </div>
-                </div>
+                </div>#}
+                {% include 'includes/translations.html' %}
                 {{ article.content }}
             </div>
             <!-- /.entry-content -->

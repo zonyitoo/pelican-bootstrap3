@@ -19,7 +19,7 @@ body {
     font-size: 10pt;
 }
 
-.tag-2 {
+.tag-3 {
     font-size: 8pt;
 }
 
@@ -30,18 +30,28 @@ body {
 #sidebar {
     padding-top: 0px;
 }
-
+/*
 #sidebar a {
     color: inherit;
+}*/
+
+tt {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #c7254e;
+    white-space: nowrap;
+    background-color: #f9f2f4;
+    border-radius: 4px;
 }
 
 i {
     margin-right: 10px;
 }
 
+/*
 a, a:hover {
     color: inherit;
-}
+}*/
 
 .entry-content a {
     text-decoration: none;
@@ -56,6 +66,15 @@ a, a:hover {
 .entry-content img {
     max-width: 100%;
     height: auto;
+}
+
+.entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5 {
+    font-weight: bold;
+}
+
+.entry-content h2 {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #cccccc;
 }
 
 /*
