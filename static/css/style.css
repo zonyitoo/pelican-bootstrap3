@@ -1,7 +1,7 @@
 body {
     padding-top: 70px;
 }
-
+/*
 #sidebar .list-group, #sidebar .list-group-item {
     background-color: transparent;
 }
@@ -9,6 +9,7 @@ body {
 .list-group-item {
     border: none;
 }
+*/
 
 .tag-1 {
     font-size: 13pt;
@@ -57,10 +58,11 @@ a, a:hover {
     height: auto;
 }
 
+/*
 .highlight pre {
     background-color: #202020;
     color: #777;
-}
+}*/
 
 #categories ul, #tags ul {
     list-style: none;

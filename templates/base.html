@@ -41,7 +41,7 @@
     {% endif %}
     <!-- Bootstrap -->
     {% if BOOTSTRAP_THEME %}
-        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap.{{ BOOTSTRAP_THEME }}.min.css" type="text/css"/>
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap-theme.min.css" type="text/css"/>
     {% else %}
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap.min.css" type="text/css"/>
     {% endif %}
@@ -78,7 +78,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="{{ SITEURL }}" class="navbar-brand">{{ SITENAME }}</a>
+            <a href="{{ SITEURL }}/" class="navbar-brand">{{ SITENAME }}</a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
@@ -108,11 +108,11 @@
 <!-- /.navbar -->
 <div class="container">
     <div class="row">
-        <div class="col-lg-9">
+        <div class="col-md-9">
             {% block content %}
             {% endblock %}
         </div>
-        <div class="col-lg-3 well well-sm" id="sidebar">
+        <div class="col-md-3" id="sidebar">
             {% include 'includes/sidebar.html' %}
         </div>
     </div>
@@ -120,9 +120,6 @@
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="{{ SITEURL }}/theme/js/bootstrap.min.js"></script>
-
-<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-<script src="{{ SITEURL }}/theme/js/respond.min.js"></script>
 {% include 'includes/disqus_script.html' %}
 </body>
 </html>
